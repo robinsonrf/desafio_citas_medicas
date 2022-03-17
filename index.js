@@ -25,7 +25,7 @@ http.createServer((req, res) => {
                 let apellido = results[0].name.last;
                 let usuario = `Nombre: ${nombre} - Apellido: ${apellido} - ID: ${id} - Timestamp: ${tiempo}`;
                 usuarios.push(usuario);
-                usuarios_consola.push(usuario)
+                usuarios_consola.push(usuario);
 
                 _lodash.forEach(usuarios, (e, i) => {
                     res.write(`${i + 1}. ${usuarios[i]}<br>`);
